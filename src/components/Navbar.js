@@ -1,9 +1,13 @@
 
-function Navbar (){
+function Navbar ({setPage}){
     return (
-        
-        <main><h1> Navbar </h1></main>
+        <>
+        <div className="Nav">
+            <div className={""} onClick={() => ("home")}>HOME</div>
+            <div className={""} onClick={() => ("about")}>ABOUT</div>
+            <div className={""} onClick={() => ("items")}>ITEMS</div>
+        </div>
+        </>   
     )
 }
-
 export default Navbar;

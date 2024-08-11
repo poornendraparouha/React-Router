@@ -10,7 +10,7 @@ function App() {
   const [page, setPage] = useState("home");
   return (
     <>
-    <Navbar />
+    <Navbar setPage={setPage}/>
     {page === "home" && <Home/>}
     {page === "about" && <About/>}
     {page === "items" && <Items/>}
