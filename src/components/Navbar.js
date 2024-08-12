@@ -1,11 +1,11 @@
 
-function Navbar ({setPage}){
+function Navbar (){
     return (
         <>
-        <div className="Nav">
-            <div className={""} onClick={() => ("home")}>HOME</div>
-            <div className={""} onClick={() => ("about")}>ABOUT</div>
-            <div className={""} onClick={() => ("items")}>ITEMS</div>
+        <div className="nav">
+            <div>HOME</div>
+            <div>ABOUT</div>
+            <div>ITEMS</div>
         </div>
         </>   
     )
