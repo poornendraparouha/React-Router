@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function Navbar (){
     return (
         <>
             <div className="nav">
-            <Link to="/home">HOME</Link>
-            <Link to="/about">ABOUT</Link>
-            <Link to="/items">ITEMS</Link>
-            {/* <div>ABOUT</div>
-            <div>ABOUT</div>
-            <div>ITEMS</div> */}
+            <Link to="/"> <h4>HOME</h4> </Link>
+            <Link to="/about"> <h4>ABOUT</h4> </Link>
+            <Link to="/items"> <h4>ITEMS</h4> </Link>
+
         </div>
+
+        {/* Outlet is displaying all the {childrens} pages and there content */}
+        <Outlet/>
         </>   
     )
 }
