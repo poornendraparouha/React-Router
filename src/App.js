@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Items from "./pages/Items";
 import Navbar from './components/Navbar';
+import { ItemDetails } from './pages/ItemDetails';
 
 
 
@@ -14,12 +15,14 @@ const router =  createBrowserRouter([
       element: <Navbar />, children:[
     {index: true,
       element: <Home />},    
-    {path: "/home",
+    {path: "home",
       element: <Home />},
-    {path: "/about",
+    {path: "about",
       element: <About />},
-    {path: "/items",
-      element: <Items />}
+    {path: "items",
+      element: <Items />},
+    {path: "items/:itemId",
+      element: <ItemDetails />}
       ]},
   ])
 
