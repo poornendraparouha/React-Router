@@ -1,13 +1,18 @@
 import { useParams } from "react-router-dom"
+import {ITEMS} from "../data/ItemData";
 
 function ItemDetails(){
-    const params = useParams();
-    console.log(params)
+    // const params = useParams();
+    const {id} = useParams();
+    const item = ITEMS.find((item) => item.id === id);
+    console.log(item)
 
     return(
         <>
-        <h1>Item Details</h1>
-        <h2>{params.itemId}</h2>
+        <main> <h1>Item Details</h1> </main>
+        {/* <h2>{params.id}</h2> */}
+        <h2>{item.title}</h2>
+        <h3>{item.description}</h3>
         </>
     )
 
